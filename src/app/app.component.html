@@ -1,0 +1,74 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="#">Start Bootstrap</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Page Content -->
+<div class="container" style="margin-top:15px;">
+	<div class="row">
+		<div class="col-lg-12 text-center">
+			<h1 class="mt-5">Thống kê giá</h1>
+			<form class="form-inline">
+				<select class="form-control mb-2 mr-sm-2 mb-sm-0">
+					<option>All</option>
+					<option>ETH</option>
+					<option>LTC</option>
+					<option>XRP</option>
+				</select>
+				<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Khoảng giá dưới">
+				<input type="text" class="form-control" placeholder="Khoảng giá trên">
+				<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Từ ngày">
+				<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Đến ngày">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+	<div class="row" style="margin-top:15px;">
+		<div class="col-lg-12">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Coin</th>
+						<th>Ngày</th>
+						<th>Giá Mỹ</th>
+						<th>Giá Hàn Quốc</th>
+						<th>Chênh lệch</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>XRP</td>
+						<td>2018-01-01</td>
+						<td>$1</td>
+						<td>$1.5</td>
+						<td>5%</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
