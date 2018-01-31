@@ -1,4 +1,9 @@
-var generatePerson = function(online) {
+var generatePerson = function (online) {
+
+	var name = "";
+	while (!name) {
+		name = prompt("Please enter your name");
+	};
 
 	var myChatUser = JSON.parse(localStorage.getItem("myChatUser"));
 	if (myChatUser) {
@@ -7,7 +12,6 @@ var generatePerson = function(online) {
 
 	var person = {};
 
-	var names = "Vincent Porter Aiden Chavez Mike Thomas Erica Hughes Ginger Johnston Tracy Carpenter Stephen Blum Christian Kelly Monica Ward Todd Green Ian Jennings Dean Henry Peyton Mckinney".split(" ");
 
 	var avatars = [
 		'https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01.jpg',
@@ -22,10 +26,10 @@ var generatePerson = function(online) {
 		'https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_10.jpg'
 	];
 
-	person.first = names[Math.floor(Math.random() * names.length)];
-	person.last = names[Math.floor(Math.random() * names.length)];
-	person.full = [person.first, person.last].join(" ");
-	person.uuid = String(new Date().getTime());
+	person.first = name;
+	person.last = name;
+	person.full = name;
+	person.uuid = name;
 
 	person.avatar = avatars[Math.floor(Math.random() * avatars.length)];
 
